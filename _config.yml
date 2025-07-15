@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Ken Zheng / Home"
+title                    : "Ken Zheng - Home"
 title_separator          : "-"
 name                     : &name "Ken Zheng"
 description              : &description "human being"
@@ -26,7 +26,7 @@ author:
   name             : "Ken (Jiankun) Zheng"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate student studying Electrical Engineering & Computer Sciences (EECS)"
-  location         : "Berkeley, California, United States"
+  location         : "Berkeley, CA, United States"
   employer         : "University of California, Berkeley"
   uri              : # URL
   email            : "kenzhengjk@berkeley.edu" 
@@ -61,7 +61,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "www.linkedin.com/in/kenzhengjk"
+  linkedin         : "kenzhengjk"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
