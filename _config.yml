@@ -22,7 +22,7 @@ repository               : "kenzhengjk/kenzhengjk.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "files/profile_image.jpg"
+  avatar           : "images/profile_image.jpg"
   name             : "Ken (Jiankun) Zheng"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate Electrical Engineering & Computer Sciences (EECS) student"
