@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "UC Berkeley, CDSS"
-date: 2024-01 - 2024-05
+date: 2024-05-01
 location: ""
 ---
 
