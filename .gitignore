@@ -1,0 +1,7 @@
+# local-only
+.DS_Store
+.claude/
+_dev/
+__pycache__/
+*.pyc
+.venv/

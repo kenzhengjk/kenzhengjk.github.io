@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-accent="cyan">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ken Zheng</title>
+  <meta name="description" content="Researcher in computer vision, robot learning, and embodied intelligence.">
+  <meta name="theme-color" content="#08090b">
+
+  <!-- Social previews (update URL + image once deployed) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ken Zheng">
+  <meta property="og:description" content="Researcher in computer vision, robot learning, and embodied intelligence.">
+  <meta property="og:image" content="assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Content first, then theme init (avoids a flash of the wrong theme) -->
+  <script src="assets/js/content.js"></script>
+  <script>
+    (function () {
+      var d = document.documentElement, q = new URLSearchParams(location.search), t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      t = q.get("theme") || t || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      d.dataset.theme = t;
+      d.dataset.accent = q.get("accent") || (window.SITE && SITE.meta.accent) || "lime";
+      d.classList.add("js");
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/background.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hud" id="hud">
+    <div class="hud-in">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-name" id="brand-name"></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Sections"></nav>
+      <div class="hud-actions">
+        <button class="kbd-btn" id="open-palette" type="button" aria-label="Search the site">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+          <span class="kbd-label">Search</span><kbd id="kbd-hint">⌘K</kbd>
+        </button>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 2a6 6 0 0 0 0 12z" fill="currentColor"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 5.5h11M2.5 10.5h11"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mnav" id="mnav" aria-label="Sections (mobile)"></nav>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Introduction"></section>
+    <div class="wrap" id="sections"></div>
+  </main>
+
+  <footer class="foot" id="contact"></footer>
+
+  <div class="pal" id="palette" hidden>
+    <div class="pal-box" role="dialog" aria-modal="true" aria-label="Search">
+      <div class="pal-head">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+        <input class="pal-input" id="pal-input" type="text" placeholder="Jump to a section, paper, or link…" autocomplete="off" spellcheck="false" aria-controls="pal-list">
+        <kbd>esc</kbd>
+      </div>
+      <ul class="pal-list" id="pal-list" role="listbox"></ul>
+      <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:120px 24px;text-align:center;font-family:monospace">This site renders its content with JavaScript. Please enable it to view the page.</p>
+  </noscript>
+</body>
+</html>
