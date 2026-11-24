@@ -255,7 +255,7 @@
 
   function renderFooter() {
     $("#contact").innerHTML = `
-      <div class="wrap foot-in reveal">
+      <div class="wrap foot-in">
         <div class="foot-fine">
           <span>© ${new Date().getFullYear()} ${esc(P.name)}</span>
           <span>last updated ${esc(updated)}</span>
