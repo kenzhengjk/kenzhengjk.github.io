@@ -1,5 +1,5 @@
 # personal_website
-
+<!-- 
 A hand-built, dependency-free academic site — plain HTML/CSS/JS, no build step.
 
 ```
@@ -78,4 +78,4 @@ Then open http://localhost:4173. Handy for design checks:
 3. Live at `https://<github-username>.github.io` within a minute or two.
 
 Optional custom domain (e.g. `yourname.com`, ~$10–12/yr): add a `CNAME` file containing
-the domain, point DNS at GitHub Pages, and enable "Enforce HTTPS".
+the domain, point DNS at GitHub Pages, and enable "Enforce HTTPS". -->
